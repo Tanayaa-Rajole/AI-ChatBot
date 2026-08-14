@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <div>
+                    <h1>AI Chat</h1>
+                    <span>Intelligent Assistant</span>
+                </div>
+            </div>
+
+            <button id="newChatButton" class="new-chat">
+                + New Chat
+            </button>
+
+            <div class="sidebar-info">
+                <p>AI-powered conversations</p>
+                <small>
+                    Your messages are processed through the backend.
+                </small>
+            </div>
+
+            <div class="sidebar-footer">
+                <span>Built with</span>
+                <strong>FastAPI + OpenAI</strong>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Chat -->
+        <main class="chat-container">
+
+            <!-- Header -->
+            <header class="chat-header">
+
+                <div>
+                    <h2>AI Assistant</h2>
+
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        Online
+                    </div>
+                </div>
+
+                <button id="clearButton" class="clear-button">
+                    Clear
+                </button>
+
+            </header>
+
+
+            <!-- Messages -->
+            <section id="chatMessages" class="chat-messages">
+
+                <div class="message assistant-message">
+
+                    <div class="avatar">
+                        AI
+                    </div>
+
+                    <div class="message-content">
+                        <div class="message-name">
+                            AI Assistant
+                        </div>
+
+                        <div class="bubble">
+                            Hey! I'm your AI assistant. Ask me anything.
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Typing Indicator -->
+            <div id="typingIndicator" class="typing-indicator hidden">
+
+                <div class="avatar">
+                    AI
+                </div>
+
+                <div class="typing-bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <!-- Input -->
+            <footer class="input-area">
+
+                <div class="input-wrapper">
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Message AI Assistant..."
+                        rows="1"
+                    ></textarea>
+
+                    <button id="sendButton" class="send-button">
+                        ➤
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    AI can make mistakes. Verify important information.
+                </p>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
